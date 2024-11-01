@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun downloadImage(url: String) {
         CoroutineScope(Dispatchers.IO).launch {
-            try{
+            try {
                 Log.d("ImageDownload", "Start downloading image from URL: $url")
                 val bitmap = downloadImageFromNetwork(url)
 
